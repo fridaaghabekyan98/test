@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Staff List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vacation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Calendar</a>
+                    </li>
+                </ul>
+                <div class="admin">
+                    <img src="images/user.png" alt="" class="img-fluid d-block ms-auto">
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="language">
+                    <div class="dropdown">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 0C2.46795 0 0 2.46795 0 5.5C0 8.53205 2.46795 11 5.5 11C8.53205 11 11 8.53205 11 5.5C11 2.46795 8.53205 0 5.5 0ZM10.1327 5.07692H8.03141C7.975 3.39167 7.58013 1.96731 6.98077 1.0859C8.69423 1.6641 9.96346 3.21538 10.1327 5.07692ZM5.5 10.0199C4.74551 10.0199 3.90641 8.29231 3.81474 5.92308H7.18526C7.09359 8.29231 6.25449 10.0199 5.5 10.0199ZM3.81474 5.07692C3.90641 2.70769 4.74551 0.980128 5.5 0.980128C6.25449 0.980128 7.09359 2.70769 7.18526 5.07692H3.81474ZM4.01923 1.0859C3.41987 1.96731 3.025 3.39167 2.96859 5.07692H0.867308C1.03654 3.21538 2.30577 1.6641 4.01923 1.0859ZM0.867308 5.92308H2.96859C3.025 7.60833 3.41987 9.03269 4.01923 9.9141C2.30577 9.3359 1.03654 7.78462 0.867308 5.92308ZM6.98077 9.9141C7.58013 9.03269 7.975 7.61539 8.03141 5.92308H10.1327C9.96346 7.78462 8.69423 9.3359 6.98077 9.9141Z"
+                                  fill="#FFFDFD"/>
+                        </svg>
+                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            English
+                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.84351 0.134745C7.74497 0.0474816 7.61167 0.00128327 7.47256 0.00128327C7.33345 0.00128327 7.20015 0.0474816 7.10161 0.134745L4.00072 2.89124L0.888245 0.134745C0.685383 -0.044915 0.355008 -0.044915 0.152146 0.134745C-0.0507155 0.314405 -0.0507155 0.606994 0.152146 0.786654L3.62978 3.86654C3.72831 3.9538 3.86162 4 4.00072 4C4.13983 4 4.27314 3.9538 4.37167 3.86654L7.8493 0.786654C7.94784 0.69939 8 0.581328 8 0.458133C8 0.340071 7.94204 0.222008 7.84351 0.134745Z"
+                                      fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <input type="search" class="search" placeholder="Search ...">
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container search-box">
+        <div class="row">
+            <div class="col-lg-4">
+                <select name="" id="">
+                    <option value="Marketing" selected>Marketing</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </div>
+            <div class="col-lg-4 align-items-center">
+                <input type="checkbox">
+                <button>
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.2891 4.4642H13.6016C13.168 4.4642 12.8164 4.11264 12.8164 3.67905C12.8164 3.24545 13.168 2.89389 13.6016 2.89389H18.2891C18.7227 2.89389 19.0742 3.24545 19.0742 3.67905C19.0742 4.11264 18.7227 4.4642 18.2891 4.4642Z"
+                              fill="white"/>
+                        <path d="M15.9463 6.81933C15.5127 6.81933 15.1611 6.46777 15.1611 6.03418V1.34668C15.1611 0.913086 15.5127 0.561523 15.9463 0.561523C16.3799 0.561523 16.7314 0.913086 16.7314 1.34668V6.03418C16.7314 6.46777 16.3799 6.81933 15.9463 6.81933Z"
+                              fill="white"/>
+                        <path d="M18.1148 18.8548C17.8687 18.8548 17.6343 18.7259 17.5054 18.5032C16.7086 17.1204 15.5484 15.9603 14.1656 15.1634C9.79449 12.6322 4.19293 14.1322 1.66168 18.5032C1.46246 18.8431 1.04059 18.9603 0.700742 18.7611C0.360899 18.5618 0.243711 18.14 0.44293 17.8001C3.34918 12.7611 9.81793 11.0384 14.857 13.9447C16.4625 14.8704 17.7867 16.2064 18.7125 17.8001C18.9117 18.14 18.7945 18.5618 18.4546 18.7611C18.3492 18.8197 18.232 18.8548 18.1148 18.8548Z"
+                              fill="white"/>
+                        <path d="M9.59491 13.9322C8.85663 13.9322 8.10663 13.8033 7.39178 13.5338C4.12225 12.3268 2.44647 8.67052 3.6535 5.40098C4.76678 2.4127 7.93085 0.713482 11.0363 1.44004C11.4113 1.53379 11.6457 1.90879 11.5637 2.28379C11.4699 2.65879 11.0949 2.89317 10.7199 2.81114C8.30585 2.23692 5.83319 3.56114 4.97772 5.89317C4.04022 8.43614 5.341 11.2721 7.88397 12.2096C9.11444 12.6666 10.4504 12.6197 11.6457 12.069C12.841 11.5182 13.7433 10.5455 14.2004 9.30333C14.341 8.94005 14.7394 8.75255 15.1027 8.89317C15.466 9.0338 15.6535 9.43223 15.5129 9.79551C14.9269 11.3775 13.7551 12.6432 12.2199 13.3463C11.3879 13.733 10.4973 13.9322 9.59491 13.9322Z"
+                              fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container info-box">
+        <div class="content">
+            <div class="d-flex">
+                <div class="prof-block">
+                    <div class="profs">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             class="edit">
+                            <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                  fill="#8B96AC"/>
+                            <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                  fill="#8B96AC"/>
+                        </svg>
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton1">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user1.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton2">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Marketing </p>
+                        <img src="images/user2.png" alt="" class="user">
+                        <p class="title">Marvin McKinney</p>
+                        <p class="info">Marketing Specialist</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton3">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Development</p>
+                        <img src="images/user3.png" alt="" class="user">
+                        <p class="title">Cameron Williamson</p>
+                        <p class="info">React JS Developer</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton4">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Development</p>
+                        <img src="images/user4.png" alt="" class="user">
+                        <p class="title">Ronald Richards</p>
+                        <p class="info">QA</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="prof-block">
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton5">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user1.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton6">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user2.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton7">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user3.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton8">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user4.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="data-table-box">
+                    <ul class="header">
+                        <li class="data-title">Data</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC.png" alt="">
+                            <span>Company Name</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span class="blue">2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span>8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><span>18</span></li>
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span>23</span></li>
+                        <li><span>24</span></li>
+                        <li><span>25</span></li>
+                        <li><span>26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span>30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC%20(4).png" alt="">
+                            <span>Jenny Wilson</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span>2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span class="pink">8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><span class="half" type="button" class="btn btn-secondary" data-bs-container="body"  data-bs-placement="top"
+                                  data-bs-toggle="popover">18</span></li>
+
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span class="white">23</span></li>
+                        <li><span>24</span></li>
+                        <li><span class="left-white">25</span></li>
+                        <li><span class="right-white">26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span class="pink">30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                </div>
+                <div class="data-table-box">
+                    <ul class="header">
+                        <li class="data-title">Data</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC.png" alt="">
+                            <span>Company Name</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span class="blue">2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span>8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><span>18</span></li>
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span>23</span></li>
+                        <li><span>24</span></li>
+                        <li><span>25</span></li>
+                        <li><span>26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span>30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC%20(4).png" alt="">
+                            <span>Jenny Wilson</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span>2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span class="pink">8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><span class="half" type="button" class="btn btn-secondary" data-bs-container="body"  data-bs-placement="top"
+                                  data-bs-toggle="popover">18</span></li>
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span class="white">23</span></li>
+                        <li><span>24</span></li>
+                        <li><span class="left-white">25</span></li>
+                        <li><span class="right-white">26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span class="pink">30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="d-flex">
+                <div class="prof-block">
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton9">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user1.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton10">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton10">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user2.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton11">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton11">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user3.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton12">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton12">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user4.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="prof-block">
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton13">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton13">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user1.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton14">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton14">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user2.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton15">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton15">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user3.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="profs">
+                        <div class="dropdown">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 class="edit dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                 id="dropdownMenuButton16">
+                                <path d="M7.35503 20H2.4745C1.57974 20 0.847656 19.2678 0.847656 18.3729V13.8305C0.847656 13.3966 1.01034 12.9898 1.32215 12.678L13.5235 0.474576C13.8353 0.162712 14.242 0 14.6758 0C15.1096 0 15.5164 0.162712 15.8282 0.474576L20.3698 5.01695C21.007 5.65424 21.007 6.68475 20.3698 7.32203L7.92442 19.7695C7.7753 19.9186 7.57194 20 7.35503 20ZM14.6758 1.62712L2.4745 13.8305V18.3729H7.0161L19.2174 6.16949L14.6758 1.62712Z"
+                                      fill="#8B96AC"/>
+                                <path d="M17.1144 10.2379C16.911 10.2379 16.6941 10.1566 16.545 9.99386L10.851 4.29895C10.5392 3.98708 10.5392 3.47183 10.851 3.1464C11.1629 2.83454 11.678 2.83454 12.0034 3.1464L17.6973 8.84132C18.0092 9.15318 18.0092 9.66844 17.6973 9.99386C17.5347 10.1566 17.3177 10.2379 17.1144 10.2379Z"
+                                      fill="#8B96AC"/>
+                            </svg>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton16">
+                                <li><a tabindex="-1" href="#">Edit</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">Delete <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="#">Delete ?</a></li>
+                                        <li><a tabindex="-1" href="#">Yes <span class="no">No</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="archive" tabindex="-1" href="#">Archive</a></li>
+                            </ul>
+                        </div>
+                        <p class="professional-title">Managment</p>
+                        <img src="images/user4.png" alt="" class="user">
+                        <p class="title">Jenny Wilson</p>
+                        <p class="info">Hr Manager</p>
+                        <p class="phone">077-777-777</p>
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.0043 10.9937C5.21885 10.9937 2.95685 8.67312 2.95685 5.81555C2.95685 2.95797 5.21885 0.63739 8.0043 0.63739C10.7897 0.63739 13.0517 2.95797 13.0517 5.81555C13.0517 8.67312 10.7897 10.9937 8.0043 10.9937ZM8.0043 1.78809C5.83576 1.78809 4.0785 3.59086 4.0785 5.81555C4.0785 8.04023 5.83576 9.843 8.0043 9.843C10.1728 9.843 11.9301 8.04023 11.9301 5.81555C11.9301 3.59086 10.1728 1.78809 8.0043 1.78809Z"
+                                      fill="#EEEFF3"/>
+                                <path d="M14.8097 15.0196C14.6134 15.0196 14.4265 14.9141 14.3237 14.7319C13.6881 13.6004 12.7627 12.6511 11.6598 11.999C8.17328 9.92777 3.70535 11.1552 1.68637 14.7319C1.52747 15.01 1.19097 15.1059 0.919906 14.9429C0.648839 14.7799 0.555368 14.4347 0.714269 14.1566C3.03236 10.0333 8.19197 8.62365 12.2112 11.0018C13.4918 11.7593 14.548 12.8525 15.2864 14.1566C15.4453 14.4347 15.3519 14.7799 15.0808 14.9429C14.9967 14.9909 14.9032 15.0196 14.8097 15.0196Z"
+                                      fill="#EEEFF3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="data-table-box">
+                    <ul class="header">
+                        <li class="data-title">Data</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC.png" alt="">
+                            <span>Company Name</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span class="blue">2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span>8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><span>18</span></li>
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span>23</span></li>
+                        <li><span>24</span></li>
+                        <li><span>25</span></li>
+                        <li><span>26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span>30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC%20(4).png" alt="">
+                            <span>Jenny Wilson</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span>2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span class="pink">8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><span class="half" type="button" class="btn btn-secondary" data-bs-container="body"  data-bs-placement="top"
+                                  data-bs-toggle="popover">18</span></li>
+
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span class="white">23</span></li>
+                        <li><span>24</span></li>
+                        <li><span class="left-white">25</span></li>
+                        <li><span class="right-white">26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span class="pink">30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                </div>
+                <div class="data-table-box">
+                    <ul class="header">
+                        <li class="data-title">Data</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li class="saturday">Sa</li>
+                        <li class="sunday">Su</li>
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC.png" alt="">
+                            <span>Company Name</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span class="blue">2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span>8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><span>18</span></li>
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span>23</span></li>
+                        <li><span>24</span></li>
+                        <li><span>25</span></li>
+                        <li><span>26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span>30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                    <ul class="data">
+                        <li>
+                            <img src="images/PIC%20(4).png" alt="">
+                            <span>Jenny Wilson</span>
+                        </li>
+                        <li><span>1</span></li>
+                        <li><span>2</span></li>
+                        <li><span>3</span></li>
+                        <li><span>4</span></li>
+                        <li><span>5</span></li>
+                        <li class="sat-sun"><span>6</span></li>
+                        <li class="sat-sun"><span>7</span></li>
+                        <li><span class="pink">8</span></li>
+                        <li><span>9</span></li>
+                        <li><span>10</span></li>
+                        <li><span>11</span></li>
+                        <li><span>12</span></li>
+                        <li class="sat-sun"><span>13</span></li>
+                        <li class="sat-sun"><span>14</span></li>
+                        <li><span>15</span></li>
+                        <li><span>16</span></li>
+                        <li><span>17</span></li>
+                        <li><button class="half" type="button" data-bs-container="body"  data-bs-placement="top"
+                                  data-bs-toggle="popover">18</button></li>
+
+                        <li><span>19</span></li>
+                        <li class="sat-sun"><span>20</span></li>
+                        <li class="sat-sun"><span>21</span></li>
+                        <li><span>22</span></li>
+                        <li><span class="white">23</span></li>
+                        <li><span>24</span></li>
+                        <li><span class="left-white">25</span></li>
+                        <li><span class="right-white">26</span></li>
+                        <li class="sat-sun"><span>27</span></li>
+                        <li class="sat-sun"><span>28</span></li>
+                        <li><span>29</span></li>
+                        <li><span class="pink">30</span></li>
+                        <li><span>31</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
